@@ -29,7 +29,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author CCannon
+ * @author getaylor
  */
 public class ContactsApp extends Application {
     private static ArrayList<Contact> contacts;
@@ -83,8 +83,8 @@ public class ContactsApp extends Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        loadContacts(args[1]);
-        launch(args);
+        loadContacts(args[0]); //change the args number to 0
+        launch(args); 
     }
     
     public static void loadContacts(String filename) {

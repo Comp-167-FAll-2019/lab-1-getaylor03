@@ -7,7 +7,7 @@ package contacts;
 
 /**
  *
- * @author CCannon
+ * @author getaylor
  */
 public class Contact {
     private String firstName;
@@ -22,7 +22,62 @@ public class Contact {
         this.emailAddress = emailAddress;
     }
     
-    public String toString(){
-        return firstName + " " + lastName  " " + phoneNumber + " " + emailAddress;
+    public String Contact(){
+        return getFirstName() + " " + getLastName() + " " + getPhoneNumber() + " " + getEmailAddress();
+      
     }
+        //setting and getting the names for the contacts
+   
+     //return the firstName
+    
+    public String getFirstName() {
+        return firstName;
+    }
+
+    
+   //set first name
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+   
+    //return the last Name
+    
+    public String getLastName() {
+        return lastName;
+    }
+
+   
+    //set last name
+    
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+   
+     //return the phone number
+    
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+   
+    //set phone number
+    
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+ 
+    //return the email address
+   
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    //set email addresss
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
+    }
+    
 }
